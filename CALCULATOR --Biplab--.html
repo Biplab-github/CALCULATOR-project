@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+<title>calculator</title>
+<style type="text/css">
+    body{
+          background-color:#00ffff;
+          text-shadow:3px 3px 6px black;
+    }
+  input, value{
+              color:black;
+              background-color:rgb(247,229,255);
+              border-radius:10px;
+  }
+  .wrap{
+        
+        width:265px;
+        margin:auto;
+        height:300px;
+        padding:15px;
+        background:rgb(94,71,50);
+        margin-top:33%;
+        border-radius:30px;
+        
+  }
+  input[type=text]{
+                   width:100%;
+                   height:34px;
+                   background-color:rgb(214,231,239);
+                   font-size:21px;
+  
+  }
+  input[type=button]{
+                     width:22%;
+                     height:30px;
+                     border-radius:20px; 
+                      font-size:20px;
+  
+  }
+  input[value=DELETE]{
+                      width:34%;
+  }
+ 
+ p.a{
+ text-align:center;
+ font-size:22px;
+ color:White;
+ border:2px solid black;
+ text-shadow:3px 3px 6px black;
+ box-shadow:5px 5px 5px grey;
+margin-top:70%;
+ border-radius:13px;
+ padding:8px;
+ }
+ p.b{
+     color:white;
+     text-align:center;
+     font-size:30px;
+ }
+                
+</style>
+</head>
+<body>
+             <p class="b">CALCULATOR</p>
+<div class="wrap">               
+  <form name="cal">
+     <input type="text" name="display">
+     <br><br>
+     <input type="button" value="9" Onclick="cal.display.value+='9'">
+     <input type="button" value="8" Onclick="cal.display.value+='8'">
+     <input type="button" value="7" Onclick="cal.display.value+='7'">
+     <input type="button" value="+" Onclick="cal.display.value+='+'">
+     <br><br>
+     <input type="button" value="6" Onclick="cal.display.value+='6'">
+     <input type="button" value="5" Onclick="cal.display.value+='5'">
+     <input type="button" value="4" Onclick="cal.display.value+='4'">
+     <input type="button" value="-" Onclick="cal.display.value+='-'">
+     <br><br>
+     <input type="button" value="3" Onclick="cal.display.value+='3'">
+     <input type="button" value="2" Onclick="cal.display.value+='2'">
+     <input type="button" value="1" Onclick="cal.display.value+='1'">
+     <input type="button" value="×" Onclick="cal.display.value+='×'">
+     <br><br>
+     <input type="button" value="0" Onclick="cal.display.value+='0'">
+     <input type="button" value="/" Onclick="cal.display.value+='/'">
+     <input type="button" value="%" Onclick="cal.display.value+='%'">
+     <input type="button" value="=" Onclick="cal.display.value=eval(cal.display.value)">
+     <br><br>
+     <input type="button" value="DELETE" Onclick="cal.display.value ='' " id="del">
+     
+  </form>
+  <p class="a">CODE WITH BIPLAB</p>
+  </div>
+</body>
+</html>
